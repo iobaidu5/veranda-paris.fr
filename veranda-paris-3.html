@@ -157,40 +157,25 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const current = window.location.pathname
-      .replace(/\/+$/, "")
-      .split("/")
-      .pop();
+    const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
+    const current = pathname.split("/").pop() || "index";
 
-    const menuLinks = document.querySelectorAll(".menu-top a");
-    const dropdownParent = document.querySelector(".menu-top .dropdown > a");
-    const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
+    const navLinks = document.querySelectorAll("#bs-example-navbar-collapse-1 ul li a");
 
-    let childMatched = false;
-
-    dropdownLinks.forEach(link => {
-      let href = link.getAttribute("href") || "";
-      href = href.replace(/\/+$/, "").split("/").pop();
-
-      if (href === current) {
-        link.classList.add("active");
-        childMatched = true;
-      }
-    });
-
-    // If child matched, also activate parent
-    if (childMatched && dropdownParent) {
-      dropdownParent.classList.add("active");
+    function getHrefSegment(href) {
+      if (!href || href === "#") return null;
+      const clean = href.replace(/^https?:\/\/[^/]+/, "").replace(/\/+$/, "") || "/";
+      const segment = clean.split("/").filter(Boolean).pop();
+      return segment || "index";
     }
 
-    // Handle all other top menu links normally
-    menuLinks.forEach(link => {
-      const href = link.getAttribute("href") || "";
-      if (!href || href === "#") return;
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      const hrefSegment = getHrefSegment(link.getAttribute("href") || "");
 
-      const cleanHref = href.replace(/\/+$/, "").split("/").pop();
+      if (hrefSegment === null) return;
 
-      if (cleanHref === current) {
+      if (hrefSegment === current) {
         link.classList.add("active");
       }
     });
