@@ -303,7 +303,7 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #b9519f;
   text-decoration: none
 }
 
@@ -551,7 +551,7 @@ cite {
 }
 
 .text-primary {
-  color: #428bca
+  color: #b9519f
 }
 
 a.text-primary:hover {
@@ -592,7 +592,7 @@ a.text-danger:hover {
 
 .bg-primary {
   color: #fff;
-  background-color: #428bca
+  background-color: #b9519f
 }
 
 a.bg-primary:hover {
@@ -2587,7 +2587,7 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #b9519f;
   border-color: #357ebd
 }
 
@@ -2622,12 +2622,12 @@ fieldset[disabled] .btn-primary.active,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-  background-color: #428bca;
+  background-color: #b9519f;
   border-color: #357ebd
 }
 
 .btn-primary .badge {
-  color: #428bca;
+  color: #b9519f;
   background-color: #fff
 }
 
@@ -2816,7 +2816,7 @@ fieldset[disabled] .btn-danger:hover {
 }
 
 .btn-link {
-  color: #428bca;
+  color: #b9519f;
   font-weight: 400;
   cursor: pointer;
   border-radius: 0
@@ -2996,7 +2996,7 @@ input[type=submit].btn-block {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #428bca
+  background-color: #b9519f
 }
 
 .dropdown-menu>.disabled>a,
@@ -3500,7 +3500,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav .open>a:focus,
 .nav .open>a:hover {
   background-color: #eee;
-  border-color: #428bca
+  border-color: #b9519f
 }
 
 .nav .nav-divider {
@@ -3612,9 +3612,12 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
+.nav-pills>li.active>a:hover,
+.nav-pills>li>a.active,
+.nav-pills>li>a.active:focus,
+.nav-pills>li>a.active:hover {
   color: #fff;
-  background-color: #428bca
+  background-color: #b9519f
 }
 
 .nav-stacked>li {
@@ -4300,7 +4303,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #428bca;
+  color: #b9519f;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px
@@ -4336,8 +4339,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .pagination>.active>span:hover {
   z-index: 2;
   color: #fff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #b9519f;
+  border-color: #b9519f;
   cursor: default
 }
 
@@ -4473,7 +4476,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .label-primary {
-  background-color: #428bca
+  background-color: #b9519f
 }
 
 .label-primary[href]:focus,
@@ -4555,7 +4558,7 @@ a.badge:hover {
 
 .nav-pills>.active>a>.badge,
 a.list-group-item.active>.badge {
-  color: #428bca;
+  color: #b9519f;
   background-color: #fff
 }
 
@@ -4627,7 +4630,7 @@ a.list-group-item.active>.badge {
 a.thumbnail.active,
 a.thumbnail:focus,
 a.thumbnail:hover {
-  border-color: #428bca
+  border-color: #b9519f
 }
 
 .thumbnail .caption {
@@ -4765,7 +4768,7 @@ a.thumbnail:hover {
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #428bca;
+  background-color: #b9519f;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
   -webkit-transition: width .6s ease;
@@ -4907,8 +4910,8 @@ a.list-group-item.active:focus,
 a.list-group-item.active:hover {
   z-index: 2;
   color: #fff;
-  background-color: #428bca;
-  border-color: #428bca
+  background-color: #b9519f;
+  border-color: #b9519f
 }
 
 a.list-group-item.active .list-group-item-heading,
@@ -8507,7 +8510,7 @@ fieldset[disabled] .datepicker table tr td.selected:hover:hover {
 .datepicker table tr td.active.disabled:hover,
 .datepicker table tr td.active:hover {
   color: #fff;
-  background-color: #428bca;
+  background-color: #b9519f;
   border-color: #357ebd;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .25)
 }
@@ -8610,7 +8613,7 @@ fieldset[disabled] .datepicker table tr td.active:hover.active,
 fieldset[disabled] .datepicker table tr td.active:hover:active,
 fieldset[disabled] .datepicker table tr td.active:hover:focus,
 fieldset[disabled] .datepicker table tr td.active:hover:hover {
-  background-color: #428bca;
+  background-color: #b9519f;
   border-color: #357ebd
 }
 
@@ -8618,7 +8621,7 @@ fieldset[disabled] .datepicker table tr td.active:hover:hover {
 .datepicker table tr td.active.disabled .badge,
 .datepicker table tr td.active.disabled:hover .badge,
 .datepicker table tr td.active:hover .badge {
-  color: #428bca;
+  color: #b9519f;
   background-color: #fff
 }
 
@@ -8649,7 +8652,7 @@ fieldset[disabled] .datepicker table tr td.active:hover:hover {
 .datepicker table tr td span.active.disabled:hover,
 .datepicker table tr td span.active:hover {
   color: #fff;
-  background-color: #428bca;
+  background-color: #b9519f;
   border-color: #357ebd;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .25)
 }
@@ -8752,7 +8755,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover.active,
 fieldset[disabled] .datepicker table tr td span.active:hover:active,
 fieldset[disabled] .datepicker table tr td span.active:hover:focus,
 fieldset[disabled] .datepicker table tr td span.active:hover:hover {
-  background-color: #428bca;
+  background-color: #b9519f;
   border-color: #357ebd
 }
 
@@ -8760,7 +8763,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 .datepicker table tr td span.active.disabled .badge,
 .datepicker table tr td span.active.disabled:hover .badge,
 .datepicker table tr td span.active:hover .badge {
-  color: #428bca;
+  color: #b9519f;
   background-color: #fff
 }
 
@@ -8860,7 +8863,7 @@ header #headerTop #phone {
 }
 
 header #headerTop #phone {
-  color: #428bca;
+  color: #b9519f;
   margin-right: 10px
 }
 
@@ -8928,7 +8931,7 @@ footer #bhinternet a:hover {
 }
 
 footer #bhinternet a:hover span {
-  color: #428bca
+  color: #b9519f
 }
 
 #page {
@@ -9030,7 +9033,7 @@ footer #bhinternet a:hover span {
 }
 
 #news a.thumbnail:hover .read-more {
-  color: #428bca
+  color: #b9519f
 }
 
 #contact address {
@@ -10165,7 +10168,7 @@ footer h2 {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 989px) {
 
   .qodef-page-header {
 

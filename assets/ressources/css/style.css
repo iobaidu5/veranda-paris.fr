@@ -105,4 +105,69 @@ section.seo h4{
   .grecaptcha-badge {
     bottom: 154px !important;
   }
-  
+
+/* Devis gratuit in collapsed menu: hidden on desktop */
+.devis-gratuit-in-menu {
+  display: none !important;
+}
+
+/* Navbar: show hamburger at 990px and below (instead of 768px) */
+@media (max-width: 989px) {
+  .navbar-toggle {
+    display: block !important;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  /* Hamburger icon always on the right */
+  .qodef-vertical-align-containers {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .qodef-vertical-align-containers .qodef-position-center {
+    display: flex !important;
+    justify-content: flex-end !important;
+    flex: 1 !important;
+    width: auto !important;
+    min-width: 0;
+  }
+  .qodef-position-center .navbar-header {
+    float: right !important;
+    margin-left: auto;
+  }
+  .navbar-collapse.collapse.in {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  /* Devis gratuit: hide standalone buttons, show the one inside menu */
+  #headdevis,
+  #headdevisTablette {
+    display: none !important;
+  }
+  .devis-gratuit-in-menu {
+    display: list-item !important;
+    margin-top: 8px;
+  }
+  .devis-gratuit-in-menu .button {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-width: 990px) {
+  .navbar-toggle {
+    display: none !important;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  /* Hide "Devis gratuit" menu item when desktop nav is visible */
+  .devis-gratuit-in-menu {
+    display: none !important;
+  }
+}
