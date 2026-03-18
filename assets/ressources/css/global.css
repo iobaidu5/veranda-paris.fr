@@ -9826,7 +9826,7 @@ footer h2 {
     margin: auto;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -10199,10 +10199,10 @@ footer h2 {
   section.slides h1 {
     color: #fff;
     font-size: 27px;
-    margin: auto;
+    margin: 0;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -10309,10 +10309,10 @@ footer h2 {
     display: none;
   }
 
-  header.slider {
+  /* header.slider {
     padding: 0 0 70px;
     height: auto;
-  }
+  } */
 
   header .middle h1 {
     font-size: 40px;
@@ -10337,9 +10337,12 @@ footer h2 {
   .navbar-collapse.in {
     border-top: 1px solid #b9519f;
     background-color: #fff;
-    position: relative;
     z-index: 99;
     padding-bottom: 5px;
+    position: absolute;
+    width: 90%;
+    left: 0;
+    top: 100%;
   }
 
   nav a.active,
@@ -10422,7 +10425,8 @@ footer h2 {
   section.slide h1 {
     color: #fff;
     font-size: 40px;
-
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -10782,9 +10786,10 @@ ul.social a.fa:hover {
 
 .slide {
   background: url(../../img/slideproduits.jpg);
-  padding: 0 0 320px;
+  padding: 0 0 150px;
   background-size: cover;
   position: relative;
+  background-position: center;
 }
 
 section.slides p {
@@ -10792,6 +10797,27 @@ section.slides p {
   color: #fff;
   width: 100%;
 
+}
+
+/* section.slides h1 and section.slide h1: always centered (horizontal + vertical) on every screen size */
+section.slides,
+section.slide {
+  position: relative;
+  min-height: 220px;
+}
+section.slides h1,
+section.slide h1 {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 section.one.entreprise p span {
